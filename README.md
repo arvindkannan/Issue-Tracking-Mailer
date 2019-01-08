@@ -1,13 +1,14 @@
-# rTrackMailer Automation  
-rTrackMailer - *a powerful automation script* to send mailer with attachments using Python.  
-It send's mail to all customers configured by fetching tickets logged in rTrack - an issue Tracking system for Ramco .
+# iTrackingMailer Tracking Automation  
+i - *a powerful automation script* to send mailer with attachments using Python.  
+It send's mail to all customers configured by fetching tickets logged in Defect tracking System
+
 It also Form pie chart and shows the in email body as well as generated excel attachment for easy overall view for customer.  
 
 *We recommend that you open and Read this **PREREQUISITE** before proceeding or using the rTrackMailer package anywhere*
 
 Main Features
 -------------
-Here are just a few of the things that rTrackMailer does well:
+Here are just a few of the things that iTrackingMailer does well:
 
   - Easy to Call and use it
   - Powerful enough to connect DB as in config.ini and get data and geneerate excel 
@@ -32,7 +33,7 @@ Before Using rTrackMailer package , user need to install few python packages as 
 
 ### Installing  
 
-rTrackMailer Package Can be installed to any python framework enabled machine using below command 
+iTrackingMailer Package Can be installed to any python framework enabled machine using below command 
 
 python -m pip install rTrackMailer-1.0.0.4.tar.gz
 
@@ -54,7 +55,7 @@ User will need certain pre-defined folders to be defined in machine where this w
 the same needs to be configured in config.ini file .
 
 
-**config.ini** file should be always named as * **rTrackMailer_config.ini** * & can be generated using given config Generator python file sepertely named as config_generator.py
+**config.ini** file should be always named as * **iTrackingMailer_config.ini** * & can be generated using given config Generator python file sepertely named as config_generator.py
 
 ### Config Generator Process:  
   * **config_generator.py** file can be used to generate rTrackMailer_config.ini File depending on requirement.    
@@ -88,16 +89,16 @@ Same should be configured in rTrackMailer_config.ini also using generator script
 ---
 
 
-## Importing the rTRackMailer Package and using in one line python script to automate the task.
+## Importing the iTrackingMailer Package and using in one line python script to automate the task.
 
-*from rTrackMailer import excel_Read as xls* ,Where rTrackMailer is overall solution package,
+*from iTrackingMailer import excel_Read as xls* ,Where iTrackingMailer is overall solution package,
 excel_Read is main file which we will call to execute the logic for rTrack Mailer automation process
 
 Once above line is done next is:
-*xls.main(“config file.ini path goes here”)*,where **xls** is *alise name* given to rTrackMailer package in first import statement as in above.
+*xls.main(“config file.ini path goes here”)*,where **xls** is *alise name* given to iTrackingMailer package in first import statement as in above.
 
 *Final Code(for Example)*:  
-from rTrackMailer import excel_Read as xls
+from iTrackingMailer import excel_Read as xls
 xls.main('D:\foldername\')
 
 ## Built With  
