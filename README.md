@@ -4,7 +4,7 @@ It send's mail to all customers configured by fetching tickets logged in Defect 
 
 It also Form pie chart and shows the in email body as well as generated excel attachment for easy overall view for customer.  
 
-*We recommend that you open and Read this **PREREQUISITE** before proceeding or using the rTrackMailer package anywhere*
+*We recommend that you open and Read this **PREREQUISITE** before proceeding or using the iTrackingMailer package anywhere*
 
 Main Features
 -------------
@@ -23,7 +23,7 @@ Here are just a few of the things that iTrackingMailer does well:
 Need **PYTHON** installed in machine .
 Minimum requirement is * **Python 3.7** *  
 
-Before Using rTrackMailer package , user need to install few python packages as in below.  
+Before Using iTrackingMailer package , user need to install few python packages as in below.  
 1.XLWT  
 2.xlsxwriter  
 3.pyodbc  
@@ -35,10 +35,10 @@ Before Using rTrackMailer package , user need to install few python packages as 
 
 iTrackingMailer Package Can be installed to any python framework enabled machine using below command 
 
-python -m pip install rTrackMailer-1.0.0.4.tar.gz
+python -m pip install iTrackingMailer-1.0.0.4.tar.gz
 
 
-**Pre-Requisite Python Packaged to be installed in machine before importing rTrackMailer Package in any code**
+**Pre-Requisite Python Packaged to be installed in machine before importing iTrackingMailer Package in any code**
 
 In command line run below scrits to install all dependent packages:  
 python –m pip install xlwt  
@@ -50,7 +50,7 @@ python –m pip install matplotlib
 
 ## Configure The Package 
 
-Once installed **rTrackMailer** package and pre-requisite packages mentioned above,can import rTrackMailer package for further use.  
+Once installed **iTrackingMailer** package and pre-requisite packages mentioned above,can import iTrackingMailer package for further use.  
 User will need certain pre-defined folders to be defined in machine where this will be deployed & 
 the same needs to be configured in config.ini file .
 
@@ -58,7 +58,7 @@ the same needs to be configured in config.ini file .
 **config.ini** file should be always named as * **iTrackingMailer_config.ini** * & can be generated using given config Generator python file sepertely named as config_generator.py
 
 ### Config Generator Process:  
-  * **config_generator.py** file can be used to generate rTrackMailer_config.ini File depending on requirement.    
+  * **config_generator.py** file can be used to generate iTrackingMailer_config.ini File depending on requirement.    
   * #### Sections in Config Generator :  
       * [mssql]   
 	  * [SMTP]  
@@ -70,9 +70,9 @@ the same needs to be configured in config.ini file .
 
 ## Master Files and Folders Need to be Defined before proceeding:  
 Below folders need to be created before running the package .
-Same should be configured in rTrackMailer_config.ini also using generator script.
+Same should be configured in iTrackingMailer_config.ini also using generator script.
 
-*  **Data Files** is mandatory and to be placed in folder and folder should be configured in app_datafiles_folder node in rTrackMailer_config.ini
+*  **Data Files** is mandatory and to be placed in folder and folder should be configured in app_datafiles_folder node in iTrackingMailer_config.ini
     *- customer_Master.json ,where all details about customers will be maintained as data source
     *- Escalation_Matrix_Details.json is file where escalation matrix <-> employee details mapping kept  
 *  **Sql File** is next file required to run package if excel needed to be generated from DB ,this is mandatory is file_gen_from_db is set to **True** in config.ini File.  
@@ -92,7 +92,7 @@ Same should be configured in rTrackMailer_config.ini also using generator script
 ## Importing the iTrackingMailer Package and using in one line python script to automate the task.
 
 *from iTrackingMailer import excel_Read as xls* ,Where iTrackingMailer is overall solution package,
-excel_Read is main file which we will call to execute the logic for rTrack Mailer automation process
+excel_Read is main file which we will call to execute the logic for iTrack Mailer automation process
 
 Once above line is done next is:
 *xls.main(“config file.ini path goes here”)*,where **xls** is *alise name* given to iTrackingMailer package in first import statement as in above.
